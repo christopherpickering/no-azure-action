@@ -11,7 +11,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: christopherpickering/no-azure
+      - uses: christopherpickering/no-azure-action
 ```
 
 ## Version
@@ -19,7 +19,7 @@ jobs:
 It is a good idea to add a version to prevent changes from surprising you.
 
 ```yml
-- uses: christopherpickering/no-azure@0.0.1
+- uses: christopherpickering/no-azure-action@v1.0.0
 ```
 
 Thanks for using! 🙏

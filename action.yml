@@ -9,6 +9,8 @@ runs:
   steps:
     - id: clean-source-list
       run: |
-        sudo sed -i 's/azure\.//' /etc/apt/sources.list
-        sudo apt update
+        if [ "$RUNNER_OS" == "Linux" ]; then
+          sudo sed -i 's/azure\.//' /etc/apt/sources.list
+          sudo apt-get update
+        fi
       shell: bash
