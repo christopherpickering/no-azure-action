@@ -1,0 +1,46 @@
+{
+  "name": "no-azure-action",
+  "version": "1.0.0",
+  "description": "This is a github action for ubuntu os that will remove azure from the apt source list.",
+  "private": true,
+  "scripts": {
+    "commit": "git add . && npm run pre-commit && git add . && cz --no-verify",
+    "pre-commit": "lint-staged",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopherpickering/no-azure-action.git"
+  },
+  "bugs": {
+    "url": "https://github.com/christopherpickering/no-azure-action/issues"
+  },
+  "homepage": "https://github.com/christopherpickering/no-azure-action",
+  "devDependencies": {
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "9.0.2",
+    "@semantic-release/exec": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "8.0.7",
+    "@semantic-release/npm": "10.0.2",
+    "@semantic-release/release-notes-generator": "10.0.3",
+    "cz-conventional-changelog": "3.3.0",
+    "semantic-release": "20.1.3",
+    "commitizen": "4.3.0",
+    "prettier": "^2.8.2",
+    "lint-staged": "^13.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "**/*.{ts,css,less,scss,js,json,md,yaml,html}": [
+      "npm run format"
+    ]
+  }
+}

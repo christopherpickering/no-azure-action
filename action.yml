@@ -1,0 +1,14 @@
+name: "Remove Azure Source List Action"
+description: "This Action will remove azure from the source list on ubuntu os."
+author: christopherpickering
+branding:
+  icon: "x-circle"
+  color: "orange"
+runs:
+  using: "composite"
+  steps:
+    - id: clean-source-list
+      run: |
+        sudo sed -i 's/azure\.//' /etc/apt/sources.list
+        sudo apt update
+      shell: bash
