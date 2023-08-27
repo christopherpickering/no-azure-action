@@ -1,6 +1,6 @@
 {
   "name": "no-azure-action",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "description": "This is a github action for ubuntu os that will remove azure from the apt source list.",
   "private": true,
   "scripts": {
@@ -28,7 +28,7 @@
     "@semantic-release/npm": "10.0.5",
     "@semantic-release/release-notes-generator": "11.0.4",
     "cz-conventional-changelog": "3.3.0",
-    "semantic-release": "21.1.0",
+    "semantic-release": "21.1.1",
     "commitizen": "4.3.0",
     "prettier": "^3.0.0",
     "lint-staged": "^14.0.0"
