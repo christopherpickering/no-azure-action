@@ -31,7 +31,7 @@ jobs:
           useLockFile: false
 
       - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v3
+        uses: cycjimmy/semantic-release-action@v5.0.2
 
         id: semantic
         with:
